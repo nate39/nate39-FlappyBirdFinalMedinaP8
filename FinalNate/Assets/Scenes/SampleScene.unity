@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 782982165}
   - component: {fileID: 782982168}
   - component: {fileID: 782982169}
+  - component: {fileID: 782982170}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -432,7 +433,7 @@ SpriteRenderer:
   m_SortingLayerID: 1416295305
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2079375631, guid: 0eb4d98cf3fe2f9449d32f2c0b54bcc4, type: 3}
+  m_Sprite: {fileID: 1465571182, guid: 0eb4d98cf3fe2f9449d32f2c0b54bcc4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -530,6 +531,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f705e8c432318b04896af3d645848a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upForce: 200
+--- !u!95 &782982170
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782982164}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb762cf0ece040a44b4ed6c880e355e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1857580883
 GameObject:
   m_ObjectHideFlags: 0

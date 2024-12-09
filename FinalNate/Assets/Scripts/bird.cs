@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class bird : MonoBehaviour
 {
+    public float upForce = 200;
+
     private bool isDead = false;
     private Rigidbody2D rb2d;
     void Start()
@@ -16,11 +18,18 @@ public class bird : MonoBehaviour
     {
         if (isDead == false)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
                  rb2d.velocity = Vector2.zero;
-                
+                 rb2d.AddForce 
+                   (new Vector2(0, upForce));
             }
         }
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isDead = true;
     }
 }
